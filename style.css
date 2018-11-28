@@ -1,0 +1,29 @@
+.bg-custom {
+    background-color: #020017;
+}
+.jumbotron {
+    color: white;
+    text-align: center;
+    background-image: url(img/header.jpg);
+    height: 60vh;
+    background-position: 50% 50%;
+    background-size: cover;
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+}
+.text {
+    text-align: left;
+    border-left: 2px solid #ffffff;
+    padding-left: 15px; 
+    margin-left: -15px;
+    padding-bottom: -20px;
+}
+.text>h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+.text>p {
+    color: #d1d1d1;
+    font-weight: 300;
+}
