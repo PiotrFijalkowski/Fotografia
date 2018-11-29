@@ -50,20 +50,59 @@
     cursor: pointer;
 
 }
-#about, #portfolio, #home  {
+#about, #portfolio, #home, #contact  {
     height: 1px;
     width: 100%;
     margin-top: -50px; 
     margin-bottom: 50px; 
 }
-.parallax-window {
-    min-height: 400px;
-    background: transparent;
-}
-.review {
+.offer {
     min-height: 400px;
     background: transparent;
     padding: 50px 0px;
     text-align: center;
     color: #f3f3f3;
+}
+.contact {
+    padding: 50px 0px;
+    background-color: #f8f8f8;
+    color: #0066bc;
+}
+.input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #737373; 
+    color: #979797;
+    outline: none;
+    padding: 0 0 0 15px;
+}
+.textarea {
+    width: 100%;
+    background-color: transparent;
+    border-bottom: 1px solid #737373; 
+    border-radius: 5px; 
+    min-height: 150px;
+    color: #979797;
+    padding: 15px;
+    outline: none;
+    margin-top: 5px;
+}
+
+.margintop25 {
+    margin-top: 25px;
+}
+.btn {
+    margin-left: 15px;
+    margin-top: 15px;
+}
+.footer {
+    background-color: #020017;
+    text-align: center;
+    padding: 30px;
+    color: #d1d1d1;
+}
+.social {
+    margin: 15px 8px 15px 8px;
+    height: 40px;
 }

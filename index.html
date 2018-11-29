@@ -36,7 +36,7 @@
                         <a class="nav-link" href="#portfolio">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#review">Reviews</a>
+                        <a class="nav-link" href="#offer">Offer</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
@@ -128,13 +128,66 @@
 
     </div>
     <!--end portfolio -->
-    <!--start review-->
-    <div id="review"></div>
-    <div class="review" data-parallax="scroll" data-image-src="img/review.jpg">
+    <!--start offer-->
+    <div id="offer"></div>
+    <div class="offer" data-parallax="scroll" data-image-src="img/review.jpg">
         <div class="container">
-            <h1>My Client Say</h1>
+            <h1>My Offer</h1><br>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries.
+
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries.
+
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries.</p>
         </div>
     </div>
+
+    <!--end offer-->
+    <!--start contact-->
+    <div id="contact"></div>
+    <div class="contact">
+        <div class="container">
+            <h1 style="text-align:center;">Get In Touch</h1><br>
+            <form action="">
+                <div class="row">
+                    <div class="col-md-6">
+                        Your Name: <input type="text" name="name" class="input">
+                    </div>
+                    <div class="col-md-6">
+                        Your E-Mail: <input type="email" name="mail" class="input">
+                    </div>
+                </div>
+                <div class="row margintop25">
+                    <div class="col-md-12">
+                        Your Message:
+                        <textarea name="text" class="textarea"></textarea>
+                    </div>
+                    <input type="submit" value="Send Message" class="btn btn-primary">
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+    <!--end contact-->
+    <!--start footer-->
+    <div class="footer">
+        <div class="container">
+            <img src="img/fb.png" alt="" class="social">
+            <img src="img/twitter.png" alt="" class="social">
+            <img src="img/insta.png" alt="" class="social"> <br>
+            <p>ALL RIGHTS RESERVED ‐ 2018 © Piotr Fijałkowski</p>
+        </div>
+    </div>
+    <!--end footer-->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
@@ -143,33 +196,25 @@
     <script src="js/ekko-lightbox.min.js"></script>
     <script src="js/parallax.min.js"></script>
     <script>
+         // ekkoLightbox
         $(document).on("click", '[data-toggle="lightbox"]', function (event) {
             event.preventDefault();
             $(this).ekkoLightbox();
-        });</script>
+        });
+    </script>
     <script>
+        // Add smooth scrolling
         $(document).ready(function () {
-            // Add smooth scrolling to all links
             $("a").on('click', function (event) {
-
-                // Make sure this.hash has a value before overriding default behavior
                 if (this.hash !== "") {
-                    // Prevent default anchor click behavior
                     event.preventDefault();
-
-                    // Store hash
                     var hash = this.hash;
-
-                    // Using jQuery's animate() method to add smooth page scroll
-                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
                     $('html, body').animate({
                         scrollTop: $(hash).offset().top
                     }, 800, function () {
-
-                        // Add hash (#) to URL when done scrolling (default click behavior)
                         window.location.hash = hash;
                     });
-                } // End if
+                }
             });
         });
     </script>
