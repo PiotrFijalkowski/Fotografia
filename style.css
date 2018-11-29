@@ -1,16 +1,16 @@
+
 .bg-custom {
     background-color: #020017;
 }
 .jumbotron {
     color: white;
     text-align: center;
-    background-image: url(img/header.jpg);
+    background:transparent; 
     height: 60vh;
-    background-position: 50% 50%;
-    background-size: cover;
     display: flex;
     justify-content: center; /* align horizontal */
     align-items: center; /* align vertical */
+    margin-top: 50px;
 }
 .text {
     text-align: left;
@@ -26,4 +26,44 @@
 .text>p {
     color: #d1d1d1;
     font-weight: 300;
+}
+.about {
+    padding: 50px 0px;
+}
+.about h3 {
+    color: #0066bc;
+}
+.nopadding {
+    padding: 0px;
+}
+.portfolio {
+    background-color: #f6f6f6;
+    padding-top: 50px; 
+}
+.portfolio>.row {
+    margin: 0px;
+}
+.portfolio .img-fluid:hover {
+    opacity: 0.75;
+    transition-duration: 0.2s;
+    background-color: #000;
+    cursor: pointer;
+
+}
+#about, #portfolio, #home  {
+    height: 1px;
+    width: 100%;
+    margin-top: -50px; 
+    margin-bottom: 50px; 
+}
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
+.review {
+    min-height: 400px;
+    background: transparent;
+    padding: 50px 0px;
+    text-align: center;
+    color: #f3f3f3;
 }
