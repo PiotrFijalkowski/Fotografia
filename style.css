@@ -1,4 +1,7 @@
+body {
+    font-family: 'Noto Sans TC', sans-serif;
 
+}
 .bg-custom {
     background-color: #020017;
 }
@@ -50,7 +53,7 @@
     cursor: pointer;
 
 }
-#about, #portfolio, #home, #contact  {
+#about, #portfolio, #home, #contact, #offer  {
     height: 1px;
     width: 100%;
     margin-top: -50px; 
